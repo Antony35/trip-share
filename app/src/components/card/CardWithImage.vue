@@ -8,8 +8,8 @@
       <a :href="`/${categorie}/${item.id}`" v-for="(item) in apiData.slice(0, 3)" :key="item.id" class="relative border-2 border-stone-100 rounded-xl w-64 h-64 lg:w-[calc(25%-1rem)] flex-shrink-0 overflow-hidden">
       <img :src="item.image" alt="Image" class="absolute inset-0 w-full h-full rounded-l object-cover z-0">
         <div class="absolute w-full bottom-0 z-10 p-2 bg-white">
-          <div class="flex justify-between w-full">
-            <h4 class="truncate">{{ item.title.substring(0, 20) }}{{ item.title.length > 40 ? '...' : '' }}</h4>
+          <div class="flex justify-between items-center w-full">
+            <h4 class="truncate">{{ item.title.substring(0, 20) }}{{ item.title.length > 20 ? '...' : '' }}</h4>
             <p class="text-xs text-gray-500">{{ item.date }}</p>
           </div>
           <div class="flex justify-between w-full">

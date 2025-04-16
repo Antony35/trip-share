@@ -23,9 +23,9 @@ const routes = [
         component: () => import('../src/views/HebergementComponent.vue')
     },
     {
-        path: '/activite',
-        name: 'Activite',
-        component: () => import('../src/views/ActiviteComponent.vue')
+        path: '/activity',
+        name: 'activity',
+        component: () => import('@/views/ActiviteView.vue')
     }
 ];
 
