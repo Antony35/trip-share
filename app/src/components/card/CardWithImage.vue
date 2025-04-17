@@ -10,7 +10,7 @@
         <div class="absolute w-full bottom-0 z-10 p-2 bg-white">
           <div class="flex justify-between items-center w-full">
             <h4 class="truncate">{{ item.title.substring(0, 20) }}{{ item.title.length > 20 ? '...' : '' }}</h4>
-            <p class="text-xs text-gray-500">{{ item.date }}</p>
+            <p class="text-xs text-right text-gray-500">dans {{ formatRelativeTime(item.date) }}</p>
           </div>
           <div class="flex justify-between w-full">
             <p>{{ item.expense }} €</p>
@@ -32,6 +32,9 @@
 
 <script setup>
 import { defineProps } from 'vue';
+import formatRelativeTime from '@/utils/date/DateFormatUtils.ts';
+
+
 defineProps({
   title: {
     type: String,
