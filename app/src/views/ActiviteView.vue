@@ -78,7 +78,7 @@ const activity = [
 <template>
   <SidebarComponent>
     <div class="flex flex-col gap-4">
-      <CardWithImage title="Mes prochaines activités" :api-data="activity" categorie="activité"/>
+      <CardWithImage title="Mes prochaines activités" :api-data="activity" categorie="activity"/>
       <CardDetailled :api-data="activity"/>
     </div>
   </SidebarComponent>
